@@ -24,7 +24,7 @@ public class Randoms implements Iterable<Integer> {
 
             @Override
             public Integer next() {
-                return ThreadLocalRandom.current().nextInt(max - min) + min;
+                return ThreadLocalRandom.current().nextInt(max - min + 1) + min;
             }
         };
     }
